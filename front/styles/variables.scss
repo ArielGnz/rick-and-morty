@@ -1,0 +1,35 @@
+ //colores
+ $primary-color: #11b0c8;
+ $black: #000000;
+ $white: #ffffff;
+ $second-color: #c81148;
+
+ //mixin para small devices
+ @mixin sm{
+    @media only screen and (max-width: $screen-sm){
+        @content;
+    }
+ }
+
+//para tablets 
+ @mixin md{
+    @media only screen and (min-width: $screen-sm) and (max-width: $screen-md){
+        @content;
+    }
+ }
+
+ //para pc
+ @mixin lg{
+    @media only screen and (min-width: $screen-md) and (max-width: $screen-lg){
+        @content;
+    }
+ }
+
+ //para display flex
+ @mixin flex($direction, $wrap, $justify, $align, $space: 0){
+    display: flex;
+    flex-flow: $direction $wrap;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $space;
+ }

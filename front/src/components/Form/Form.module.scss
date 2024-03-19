@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: borderBox;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: seagreen;
+}
+
+.wrapper{
+    width: 420px;
+    background:purple;
+    color: #ffff;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}

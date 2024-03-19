@@ -1,0 +1,48 @@
+.container{
+    background-color: $white;
+    min-height: 160px;
+    padding: 0px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include sm{
+        flex-direction: column;
+        padding: 15px 0px;
+    }
+
+    .Logo{
+        flex: 1;
+    }
+
+    .container2{
+        flex: 1;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        @include sm {
+            width: 100%;
+        }
+
+        .Items{
+            display: flex;
+            gap: 15px;
+
+            .linknav{
+                text-decoration: none;
+                color: inherit;
+            }
+
+            .itemsNav{
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    
+
+
+}
